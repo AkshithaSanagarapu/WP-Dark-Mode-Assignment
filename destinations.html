@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <!-- Title shown in the browser tab -->
+        <title>Travel Adventures | Destinations</title>
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Apply the saved theme before rendering to avoid a bright flash. -->
+        <script>
+            try {
+                if (localStorage.getItem('website_theme') === 'dark_mode') {
+                    document.documentElement.classList.add('theme-preload-dark');
+                }
+            } catch (error) { /* Storage can be unavailable in private contexts. */ }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Website header -->
+            <header class="header">
+                <h1>Travel Adventures</h1>
+                <p class="subtitle">
+                    Explore. Experience. Remember.
+                </p>
+            </header>
+            <!-- Flexbox navigation -->
+            <nav class="navigation">
+                <a href="index.html">
+                    Home
+                </a>
+                <a class="active"
+                href="destinations.html">
+                    Destinations
+                </a>
+                <a href="tips.html">
+                    Travel Tips
+                </a>
+                <a href="about.html">
+                    About
+                </a>
+                <!-- Accessible theme switch shared by all website pages. -->
+                <button id="theme_toggler" class="theme-toggle" type="button"
+                    aria-label="Switch to dark mode" aria-pressed="false">🌙 Dark Mode</button>
+            </nav>
+            <main>
+                <!--
+                    FLEXBOX CONTENT LAYOUT
+                    The image-right class reverses the Flexbox
+                    direction so the image appears on the right.
+                -->
+                <section class="page-layout image-right">
+                    <!-- San Francisco image -->
+                    <img
+                        class="page-image destination-image"
+                        src="images/destinations.jpg"
+                        alt="San Francisco Bay Bridge and city skyline">
+                    <!-- Destination content -->
+                    <div class="content-card">
+                        <p class="section-label">
+                            Discover New Places
+                        </p>
+                        <h2>
+                            Travel Destinations
+                        </h2>
+                        <!-- First paragraph -->
+                        <p class="paragraph-one">
+                            There are many beautiful destinations around the
+                            world for travelers to explore. Every place offers
+                            something different, from famous landmarks and
+                            exciting cities to peaceful natural scenery.
+                            Exploring these places can provide travelers with
+                            unforgettable experiences.
+                        </p>
+                        <!-- Second paragraph -->
+                        <p class="paragraph-two">
+                            Some people enjoy visiting large cities filled with
+                            restaurants, museums, and entertainment, while others
+                            prefer beaches, mountains, or quiet countryside
+                            locations. The best destination depends on what a
+                            traveler enjoys doing. Trying different types of
+                            destinations can make each trip a unique experience.
+                        </p>
+                        <!-- Third paragraph -->
+                        <p class="paragraph-three">
+                            Choosing the right destination also depends on factors
+                            such as budget, weather, transportation, and available
+                            time. Researching a place before traveling can help
+                            people plan their activities and expenses. Good
+                            planning can make a vacation more comfortable and
+                            enjoyable.
+                        </p>
+                    </div>
+                </section>
+                <!-- Bulleted list section -->
+                <section class="content-card full-card">
+                    <h2>
+                        Popular Travel Destinations
+                    </h2>
+                    <ul class="destination-list">
+                        <li>San Francisco</li>
+                        <li>New York City</li>
+                        <li>Paris</li>
+                        <li>Tokyo</li>
+                    </ul>
+                </section>
+                <!-- Destination table section -->
+                <section class="content-card full-card">
+                    <h2>
+                        Destination Information
+                    </h2>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Destination</th>
+                                    <th>Country</th>
+                                    <th>Known For</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>San Francisco</td>
+                                    <td>United States</td>
+                                    <td>Golden Gate Bridge</td>
+                                </tr>
+                                <tr>
+                                    <td>Paris</td>
+                                    <td>France</td>
+                                    <td>Eiffel Tower</td>
+                                </tr>
+                                <tr>
+                                    <td>Tokyo</td>
+                                    <td>Japan</td>
+                                    <td>Culture and Technology</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="footer">
+                <p>
+                    Travel Adventures |
+                    Explore the world one journey at a time.
+                </p>
+            </footer>
+        </div>
+        <!-- Vanilla JavaScript handles theme switching and saving preferences. -->
+        <script src="theme.js" defer></script>
+    </body>
+</html>
