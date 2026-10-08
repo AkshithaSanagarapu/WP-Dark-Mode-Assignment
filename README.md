@@ -1,32 +1,30 @@
-# Dark Mode Assignment — Travel Adventures
+# Travel Adventures — Dark Mode
 
-A separate Web Programming assignment built from the Travel Adventures website in `WP-Assignment-3`.
+A responsive travel website featuring a light and dark theme, built using HTML, CSS, and vanilla JavaScript.
 
-## Assignment requirements
-- Alternate light and dark color themes defined using CSS custom properties (`style.css`).
-- Theme toggle implemented using vanilla JavaScript (`theme.js`).
-- Theme preference saved with `localStorage` and restored on page reload.
-- Comments in the HTML, CSS, and JavaScript source files.
+## Features
 
-## Run and test
-1. Open `index.html` in a browser.
-2. Toggle dark mode and verify text, backgrounds, navigation and cards update.
-3. Navigate to `destinations.html`, `tips.html`, and `about.html` and verify the selected theme remains.
-4. Refresh the page and confirm the theme is preserved.
-5. Toggle back to light mode and repeat.
+- Light and dark mode toggle
+- CSS custom properties for theme colors
+- Theme preference saved using localStorage
+- Consistent theme across all pages
+- Responsive design and navigation
 
-## Submit as a new GitHub repository
-Create a **new** public GitHub repository named `WP-Dark-Mode-Assignment` (do not overwrite `WP-Assignment-3`). From this folder run:
+## Technologies Used
 
-```bash
-git init
-git add .
-git commit -m "Build dark mode assignment using CSS variables and vanilla JavaScript"
-git branch -M main
-git remote add origin https://github.com/AkshithaSanagarapu/WP-Dark-Mode-Assignment.git
-git push -u origin main
-```
+- HTML5
+- CSS3
+- JavaScript
 
-Submit: https://github.com/AkshithaSanagarapu/WP-Dark-Mode-Assignment
+## Website Pages
 
-*The repository URL will work only after you create and push the new repository.*
+- **Home** — Travel inspiration and featured content
+- **Destinations** — Explore travel destinations
+- **Travel Tips** — Helpful travel advice
+- **About** — Information about the website
+
+## How to Run
+
+Open `index.html` in a web browser, or visit the website using GitHub Pages.
+
+Use the theme toggle to switch between light and dark modes. Your selected theme will be remembered when you refresh the page.
